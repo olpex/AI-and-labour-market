@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приклади - Штучний Інтелект: розвиток кар'єри</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/examples.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-brain"></i>
+                <span>AI Кар'єра</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Головна</a></li>
+                <li><a href="theory.html" class="nav-link">Теорія</a></li>
+                <li><a href="examples.html" class="nav-link active">Приклади</a></li>
+                <li><a href="practice.html" class="nav-link">Практика</a></li>
+                <li><a href="resources.html" class="nav-link">Ресурси</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link">Кар'єра <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="careers.html">Професії в AI</a></li>
+                        <li><a href="skills.html">Необхідні навички</a></li>
+                        <li><a href="education.html">Освіта та сертифікація</a></li>
+                        <li><a href="portfolio.html">Створення портфоліо</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="examples-main">
+        <div class="container">
+            <div class="examples-header">
+                <h1>Інтерактивні приклади AI</h1>
+                <p class="examples-description">
+                    Дослідіть реальні застосування штучного інтелекту через інтерактивні демонстрації.
+                </p>
+            </div>
+
+            <!-- ML Introduction Section -->
+            <section class="ml-section" id="ml-intro">
+                <div class="section-header">
+                    <h2><i class="fas fa-graduation-cap"></i> Вступ до Machine Learning</h2>
+                    <p>Основи машинного навчання та його ключові концепції</p>
+                </div>
+                <div class="ml-content">
+                    <div class="concept-grid">
+                        <div class="concept-card">
+                            <div class="concept-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Дані</h3>
+                            <p>Основа для навчання моделей. Якість даних визначає успіх проекту ML.</p>
+                        </div>
+                        <div class="concept-card">
+                            <div class="concept-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3>Алгоритми</h3>
+                            <p>Математичні методи, які дозволяють комп'ютеру навчатися з даних.</p>
+                        </div>
+                        <div class="concept-card">
+                            <div class="concept-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Моделі</h3>
+                            <p>Результат навчання алгоритму на даних для вирішення конкретних задач.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Supervised Learning Section -->
+            <section class="ml-section" id="supervised-learning">
+                <div class="section-header">
+                    <h2><i class="fas fa-chalkboard-teacher"></i> Навчання з учителем</h2>
+                    <p>Алгоритми, які навчаються на помічених даних</p>
+                </div>
+                <div class="ml-content">
+                    <div class="learning-types">
+                        <div class="type-card">
+                            <h3>Класифікація</h3>
+                            <p>Передбачення категорій або класів</p>
+                            <div class="examples-list">
+                                <span class="example-tag">Розпізнавання зображень</span>
+                                <span class="example-tag">Фільтрація спаму</span>
+                                <span class="example-tag">Медична діагностика</span>
+                            </div>
+                        </div>
+                        <div class="type-card">
+                            <h3>Регресія</h3>
+                            <p>Передбачення числових значень</p>
+                            <div class="examples-list">
+                                <span class="example-tag">Прогноз цін</span>
+                                <span class="example-tag">Аналіз продажів</span>
+                                <span class="example-tag">Погодні прогнози</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Unsupervised Learning Section -->
+            <section class="ml-section" id="unsupervised-learning">
+                <div class="section-header">
+                    <h2><i class="fas fa-search"></i> Навчання без учителя</h2>
+                    <p>Виявлення прихованих закономірностей у даних</p>
+                </div>
+                <div class="ml-content">
+                    <div class="learning-types">
+                        <div class="type-card">
+                            <h3>Кластеризація</h3>
+                            <p>Групування схожих об'єктів</p>
+                            <div class="examples-list">
+                                <span class="example-tag">Сегментація клієнтів</span>
+                                <span class="example-tag">Аналіз генів</span>
+                                <span class="example-tag">Рекомендаційні системи</span>
+                            </div>
+                        </div>
+                        <div class="type-card">
+                            <h3>Зменшення розмірності</h3>
+                            <p>Спрощення складних даних</p>
+                            <div class="examples-list">
+                                <span class="example-tag">Візуалізація даних</span>
+                                <span class="example-tag">Стиснення зображень</span>
+                                <span class="example-tag">Виявлення аномалій</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reinforcement Learning Section -->
+            <section class="ml-section" id="reinforcement-learning">
+                <div class="section-header">
+                    <h2><i class="fas fa-gamepad"></i> Навчання з підкріпленням</h2>
+                    <p>Навчання через взаємодію з середовищем та отримання винагород</p>
+                </div>
+                <div class="ml-content">
+                    <div class="rl-concept">
+                        <div class="rl-diagram">
+                            <div class="rl-element agent">
+                                <i class="fas fa-robot"></i>
+                                <span>Агент</span>
+                            </div>
+                            <div class="rl-arrows">
+                                <div class="arrow action">Дія</div>
+                                <div class="arrow reward">Винагорода</div>
+                            </div>
+                            <div class="rl-element environment">
+                                <i class="fas fa-globe"></i>
+                                <span>Середовище</span>
+                            </div>
+                        </div>
+                        <div class="rl-applications">
+                            <h3>Застосування:</h3>
+                            <div class="examples-list">
+                                <span class="example-tag">Ігри (AlphaGo)</span>
+                                <span class="example-tag">Автономні автомобілі</span>
+                                <span class="example-tag">Роботика</span>
+                                <span class="example-tag">Фінансовий трейдинг</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="examples-header">
+                <h2>Практичні демонстрації</h2>
+                <p class="examples-description">
+                    Інтерактивні приклади для кращого розуміння концепцій AI.
+                    Кожен приклад показує, як AI працює на практиці.
+                </p>
+            </div>
+
+            <div class="examples-grid">
+                <!-- Machine Learning Demo -->
+                <div class="example-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Лінійна регресія</h3>
+                        <span class="difficulty-badge beginner">Початківець</span>
+                    </div>
+                    <p class="card-description">
+                        Інтерактивна демонстрація алгоритму лінійної регресії. 
+                        Додавайте точки та спостерігайте, як алгоритм знаходить найкращу лінію.
+                    </p>
+                    <div class="demo-container">
+                        <canvas id="regressionCanvas" width="400" height="300"></canvas>
+                        <div class="demo-controls">
+                            <button class="btn btn-primary" onclick="clearRegression()">Очистити</button>
+                            <button class="btn btn-secondary" onclick="generateRandomData()">Випадкові дані</button>
+                            <div class="info-display">
+                                <span id="regressionInfo">Клікніть на графік, щоб додати точки</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Neural Network Visualization -->
+                <div class="example-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Нейронна мережа</h3>
+                        <span class="difficulty-badge intermediate">Середній</span>
+                    </div>
+                    <p class="card-description">
+                        Візуалізація роботи нейронної мережі. Спостерігайте, як сигнали 
+                        проходять через шари та як змінюються ваги зв'язків.
+                    </p>
+                    <div class="demo-container">
+                        <div id="neuralNetworkViz" class="neural-network-container"></div>
+                        <div class="demo-controls">
+                            <button class="btn btn-primary" onclick="startNeuralAnimation()">Запустити</button>
+                            <button class="btn btn-secondary" onclick="resetNeuralNetwork()">Скинути</button>
+                            <div class="network-controls">
+                                <label>Швидкість: <input type="range" id="animationSpeed" min="1" max="10" value="5"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Classification -->
+                <div class="example-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3>Класифікація зображень</h3>
+                        <span class="difficulty-badge intermediate">Середній</span>
+                    </div>
+                    <p class="card-description">
+                        Демонстрація класифікації зображень за допомогою згорткових нейронних мереж.
+                        Завантажте зображення та подивіться результат класифікації.
+                    </p>
+                    <div class="demo-container">
+                        <div class="image-upload-area" id="imageUploadArea">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Перетягніть зображення сюди або клікніть для вибору</p>
+                            <input type="file" id="imageInput" accept="image/*" hidden>
+                        </div>
+                        <div class="classification-results" id="classificationResults" style="display: none;">
+                            <img id="uploadedImage" alt="Завантажене зображення">
+                            <div class="predictions">
+                                <h4>Результати класифікації:</h4>
+                                <div id="predictionsList"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Natural Language Processing -->
+                <div class="example-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Аналіз тональності</h3>
+                        <span class="difficulty-badge beginner">Початківець</span>
+                    </div>
+                    <p class="card-description">
+                        Аналіз тональності тексту за допомогою обробки природної мови.
+                        Введіть текст і дізнайтеся, чи він позитивний, негативний або нейтральний.
+                    </p>
+                    <div class="demo-container">
+                        <div class="text-input-area">
+                            <textarea id="sentimentText" placeholder="Введіть текст для аналізу тональності...">Цей курс з штучного інтелекту дуже цікавий і корисний!</textarea>
+                            <button class="btn btn-primary" onclick="analyzeSentiment()">Аналізувати</button>
+                        </div>
+                        <div class="sentiment-results" id="sentimentResults">
+                            <div class="sentiment-meter">
+                                <div class="meter-bar">
+                                    <div class="meter-fill" id="sentimentMeter"></div>
+                                </div>
+                                <div class="meter-labels">
+                                    <span>Негативний</span>
+                                    <span>Нейтральний</span>
+                                    <span>Позитивний</span>
+                                </div>
+                            </div>
+                            <div class="sentiment-details" id="sentimentDetails">
+                                <p>Введіть текст для аналізу</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clustering Algorithm -->
+                <div class="example-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>K-Means кластеризація</h3>
+                        <span class="difficulty-badge intermediate">Середній</span>
+                    </div>
+                    <p class="card-description">
+                        Інтерактивна демонстрація алгоритму K-Means. Додавайте точки, 
+                        встановлюйте кількість кластерів та спостерігайте за процесом кластеризації.
+                    </p>
+                    <div class="demo-container">
+                        <canvas id="clusteringCanvas" width="400" height="300"></canvas>
+                        <div class="demo-controls">
+                            <div class="control-group">
+                                <label>Кількість кластерів: <input type="number" id="clusterCount" min="2" max="8" value="3"></label>
+                                <button class="btn btn-primary" onclick="runKMeans()">Запустити K-Means</button>
+                            </div>
+                            <div class="control-group">
+                                <button class="btn btn-secondary" onclick="clearClustering()">Очистити</button>
+                                <button class="btn btn-secondary" onclick="generateClusterData()">Генерувати дані</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decision Tree -->
+                <div class="example-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <h3>Дерево рішень</h3>
+                        <span class="difficulty-badge advanced">Експерт</span>
+                    </div>
+                    <p class="card-description">
+                        Візуалізація алгоритму дерева рішень для класифікації.
+                        Змінюйте параметри та спостерігайте, як будується дерево.
+                    </p>
+                    <div class="demo-container">
+                        <div id="decisionTreeViz" class="decision-tree-container">
+                            <svg id="treeSvg" width="400" height="300"></svg>
+                        </div>
+                        <div class="demo-controls">
+                            <div class="control-group">
+                                <label>Максимальна глибина: <input type="range" id="maxDepth" min="2" max="6" value="3"></label>
+                                <span id="depthValue">3</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="buildDecisionTree()">Побудувати дерево</button>
+                            <button class="btn btn-secondary" onclick="resetDecisionTree()">Скинути</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Genetic Algorithm -->
+                <div class="example-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <h3>Генетичний алгоритм</h3>
+                        <span class="difficulty-badge advanced">Експерт</span>
+                    </div>
+                    <p class="card-description">
+                        Демонстрація еволюційного алгоритму для оптимізації.
+                        Спостерігайте, як популація еволюціонує для досягнення цілі.
+                    </p>
+                    <div class="demo-container">
+                        <canvas id="geneticCanvas" width="400" height="300"></canvas>
+                        <div class="demo-controls">
+                            <div class="control-group">
+                                <label>Розмір популяції: <input type="number" id="populationSize" min="20" max="100" value="50"></label>
+                                <label>Швидкість мутації: <input type="range" id="mutationRate" min="0.01" max="0.1" step="0.01" value="0.05"></label>
+                            </div>
+                            <button class="btn btn-primary" onclick="startEvolution()">Почати еволюцію</button>
+                            <button class="btn btn-secondary" onclick="stopEvolution()">Зупинити</button>
+                            <div class="evolution-stats" id="evolutionStats">
+                                <span>Покоління: <span id="generation">0</span></span>
+                                <span>Найкращий результат: <span id="bestFitness">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reinforcement Learning -->
+                <div class="example-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Навчання з підкріпленням</h3>
+                        <span class="difficulty-badge advanced">Експерт</span>
+                    </div>
+                    <p class="card-description">
+                        Демонстрація Q-learning алгоритму в простому лабіринті.
+                        Агент навчається знаходити оптимальний шлях до цілі.
+                    </p>
+                    <div class="demo-container">
+                        <div id="mazeContainer" class="maze-container">
+                            <canvas id="mazeCanvas" width="400" height="300"></canvas>
+                        </div>
+                        <div class="demo-controls">
+                            <div class="control-group">
+                                <label>Швидкість навчання: <input type="range" id="learningRate" min="0.1" max="1" step="0.1" value="0.5"></label>
+                                <label>Epsilon: <input type="range" id="epsilon" min="0.1" max="1" step="0.1" value="0.3"></label>
+                            </div>
+                            <button class="btn btn-primary" onclick="startQLearning()">Почати навчання</button>
+                            <button class="btn btn-secondary" onclick="resetMaze()">Скинути лабіринт</button>
+                            <div class="learning-stats" id="learningStats">
+                                <span>Епізод: <span id="episode">0</span></span>
+                                <span>Винагорода: <span id="totalReward">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Comparison Section -->
+            <section class="comparison-section">
+                <h2>Порівняння алгоритмів</h2>
+                <p>Порівняйте різні алгоритми машинного навчання на одному наборі даних</p>
+                
+                <div class="comparison-container">
+                    <div class="algorithm-selector">
+                        <h3>Виберіть алгоритми для порівняння:</h3>
+                        <div class="algorithm-checkboxes">
+                            <label><input type="checkbox" value="linear" checked> Лінійна регресія</label>
+                            <label><input type="checkbox" value="polynomial" checked> Поліноміальна регресія</label>
+                            <label><input type="checkbox" value="knn"> K-найближчих сусідів</label>
+                            <label><input type="checkbox" value="svm"> Метод опорних векторів</label>
+                        </div>
+                        <button class="btn btn-primary" onclick="runComparison()">Запустити порівняння</button>
+                    </div>
+                    
+                    <div class="comparison-results">
+                        <canvas id="comparisonCanvas" width="600" height="400"></canvas>
+                        <div class="metrics-table" id="metricsTable">
+                            <!-- Metrics will be populated here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Info Modal -->
+    <div id="infoModal" class="info-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Інформація про алгоритм</h3>
+                <button class="btn-close" onclick="closeInfoModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content -->
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/examples.js"></script>
+</body>
+</html>

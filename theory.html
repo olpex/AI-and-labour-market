@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Теорія - Штучний Інтелект: розвиток кар'єри</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/theory.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-brain"></i>
+                <span>AI Кар'єра</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Головна</a></li>
+                <li><a href="theory.html" class="nav-link active">Теорія</a></li>
+                <li><a href="examples.html" class="nav-link">Приклади</a></li>
+                <li><a href="practice.html" class="nav-link">Практика</a></li>
+                <li><a href="resources.html" class="nav-link">Ресурси</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link">Кар'єра <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="careers.html">Професії в AI</a></li>
+                        <li><a href="skills.html">Необхідні навички</a></li>
+                        <li><a href="education.html">Освіта та сертифікація</a></li>
+                        <li><a href="portfolio.html">Створення портфоліо</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="theory-main">
+        <div class="theory-container">
+            <!-- Sidebar Navigation -->
+            <aside class="theory-sidebar">
+                <div class="sidebar-header">
+                    <h3>Зміст курсу</h3>
+                    <div class="progress-indicator">
+                        <span class="progress-text">Прогрес: 25%</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 25%"></div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="sidebar-nav">
+                    <div class="nav-section">
+                        <h4 class="section-title">Модуль 1: Основи AI</h4>
+                        <ul class="nav-list">
+                            <li><a href="#intro" class="nav-item active">Що таке штучний інтелект?</a></li>
+                            <li><a href="#history" class="nav-item">Історія розвитку AI</a></li>
+                            <li><a href="#types" class="nav-item">Типи штучного інтелекту</a></li>
+                            <li><a href="#applications" class="nav-item">Застосування AI</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-section">
+                        <h4 class="section-title">Модуль 2: Machine Learning</h4>
+                        <ul class="nav-list">
+                            <li><a href="#ml-intro" class="nav-item">Вступ до ML</a></li>
+                            <li><a href="#supervised" class="nav-item">Навчання з учителем</a></li>
+                            <li><a href="#unsupervised" class="nav-item">Навчання без учителя</a></li>
+                            <li><a href="#reinforcement" class="nav-item">Навчання з підкріпленням</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-section">
+                        <h4 class="section-title">Модуль 3: Кар'єрні шляхи</h4>
+                        <ul class="nav-list">
+                            <li><a href="careers.html" class="nav-item">Професії в AI</a></li>
+                            <li><a href="skills.html" class="nav-item">Необхідні навички</a></li>
+                            <li><a href="education.html" class="nav-item">Освіта та сертифікація</a></li>
+                            <li><a href="portfolio.html" class="nav-item">Створення портфоліо</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="theory-content">
+                <div class="content-header">
+                    <div class="breadcrumb">
+                        <a href="index.html">Головна</a>
+                        <span>/</span>
+                        <span>Теорія</span>
+                        <span>/</span>
+                        <span>Основи AI</span>
+                    </div>
+                    <div class="content-actions">
+                        <button class="btn btn-outline" id="toggleNotes">
+                            <i class="fas fa-sticky-note"></i>
+                            Нотатки
+                        </button>
+                        <button class="btn btn-outline" id="toggleBookmark">
+                            <i class="fas fa-bookmark"></i>
+                            Закладка
+                        </button>
+                    </div>
+                </div>
+
+                <article class="lesson-content">
+                    <section id="intro" class="content-section active">
+                        <h1>Що таке штучний інтелект?</h1>
+                        
+                        <div class="lesson-meta">
+                            <span class="reading-time">
+                                <i class="fas fa-clock"></i>
+                                Час читання: 15 хвилин
+                            </span>
+                            <span class="difficulty">
+                                <i class="fas fa-signal"></i>
+                                Рівень: Початківець
+                            </span>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>Визначення штучного інтелекту</h2>
+                            <p class="lead">
+                                Штучний інтелект (AI) — це галузь комп'ютерних наук, яка займається створенням 
+                                інтелектуальних машин, здатних виконувати завдання, які зазвичай потребують 
+                                людського інтелекту.
+                            </p>
+                            
+                            <div class="highlight-box">
+                                <h3>Ключові характеристики AI:</h3>
+                                <ul>
+                                    <li><strong>Навчання</strong> — здатність покращувати продуктивність на основі досвіду</li>
+                                    <li><strong>Міркування</strong> — вміння робити логічні висновки</li>
+                                    <li><strong>Сприйняття</strong> — обробка сенсорної інформації</li>
+                                    <li><strong>Адаптація</strong> — пристосування до нових ситуацій</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>Основні підходи до AI</h2>
+                            
+                            <div class="approach-grid">
+                                <div class="approach-card">
+                                    <div class="approach-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <h3>Символьний AI</h3>
+                                    <p>Використовує символи та правила для представлення знань та міркувань.</p>
+                                    <div class="approach-examples">
+                                        <strong>Приклади:</strong> Експертні системи, логічне програмування
+                                    </div>
+                                </div>
+                                
+                                <div class="approach-card">
+                                    <div class="approach-icon">
+                                        <i class="fas fa-network-wired"></i>
+                                    </div>
+                                    <h3>Коннекціоністський AI</h3>
+                                    <p>Імітує роботу нейронних мереж мозку для обробки інформації.</p>
+                                    <div class="approach-examples">
+                                        <strong>Приклади:</strong> Нейронні мережі, глибоке навчання
+                                    </div>
+                                </div>
+                                
+                                <div class="approach-card">
+                                    <div class="approach-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h3>Статистичний AI</h3>
+                                    <p>Використовує статистичні методи для аналізу даних та прийняття рішень.</p>
+                                    <div class="approach-examples">
+                                        <strong>Приклади:</strong> Машинне навчання, аналіз даних
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>AI vs Людський інтелект</h2>
+                            
+                            <div class="comparison-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Аспект</th>
+                                            <th>Штучний інтелект</th>
+                                            <th>Людський інтелект</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Швидкість обробки</td>
+                                            <td class="advantage">Дуже висока</td>
+                                            <td>Обмежена</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Креативність</td>
+                                            <td>Обмежена</td>
+                                            <td class="advantage">Висока</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Емоційний інтелект</td>
+                                            <td>Відсутній</td>
+                                            <td class="advantage">Природний</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Точність</td>
+                                            <td class="advantage">Дуже висока</td>
+                                            <td>Схильна до помилок</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Адаптивність</td>
+                                            <td>Програмована</td>
+                                            <td class="advantage">Природна</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>Інтерактивна демонстрація</h2>
+                            
+                            <div class="interactive-demo">
+                                <h3>Простий AI алгоритм: Лінійна регресія</h3>
+                                <p>Спробуйте змінити параметри та подивіться, як AI "навчається" знаходити закономірності:</p>
+                                
+                                <div class="demo-controls">
+                                    <div class="control-group">
+                                        <label for="dataPoints">Кількість точок даних:</label>
+                                        <input type="range" id="dataPoints" min="10" max="100" value="50">
+                                        <span id="dataPointsValue">50</span>
+                                    </div>
+                                    
+                                    <div class="control-group">
+                                        <label for="noise">Рівень шуму:</label>
+                                        <input type="range" id="noise" min="0" max="50" value="10">
+                                        <span id="noiseValue">10</span>
+                                    </div>
+                                    
+                                    <button class="btn btn-primary" id="trainModel">Навчити модель</button>
+                                </div>
+                                
+                                <div class="demo-visualization">
+                                    <canvas id="regressionCanvas" width="400" height="300"></canvas>
+                                </div>
+                                
+                                <div class="demo-results">
+                                    <div class="result-item">
+                                        <span class="result-label">Точність моделі:</span>
+                                        <span class="result-value" id="accuracy">--</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-label">Час навчання:</span>
+                                        <span class="result-value" id="trainingTime">--</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>Ключові терміни</h2>
+                            
+                            <div class="glossary">
+                                <div class="glossary-item">
+                                    <dt>Алгоритм</dt>
+                                    <dd>Набір правил або інструкцій для вирішення конкретної проблеми</dd>
+                                </div>
+                                <div class="glossary-item">
+                                    <dt>Дані</dt>
+                                    <dd>Інформація, яка використовується для навчання AI моделей</dd>
+                                </div>
+                                <div class="glossary-item">
+                                    <dt>Модель</dt>
+                                    <dd>Математичне представлення реального процесу</dd>
+                                </div>
+                                <div class="glossary-item">
+                                    <dt>Навчання</dt>
+                                    <dd>Процес покращення продуктивності системи на основі досвіду</dd>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lesson-navigation">
+                            <button class="btn btn-secondary" disabled>
+                                <i class="fas fa-chevron-left"></i>
+                                Попередній урок
+                            </button>
+                            <button class="btn btn-primary" onclick="nextLesson()">
+                                Наступний урок
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- Історія розвитку AI -->
+                    <section id="history" class="content-section">
+                        <h1>Історія розвитку штучного інтелекту</h1>
+                        
+                        <div class="lesson-meta">
+                            <span class="reading-time">
+                                <i class="fas fa-clock"></i>
+                                Час читання: 12 хвилин
+                            </span>
+                            <span class="difficulty">
+                                <i class="fas fa-signal"></i>
+                                Рівень: Початківець
+                            </span>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>Зародження ідеї (1940-1950-ті)</h2>
+                            <p class="lead">
+                                Концепція штучного інтелекту зародилася в середині XX століття, коли вчені почали 
+                                замислюватися над можливістю створення машин, здатних мислити.
+                            </p>
+                            
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-year">1943</div>
+                                    <div class="timeline-content">
+                                        <h4>Перша нейронна мережа</h4>
+                                        <p>Маккаллок і Піттс створили першу математичну модель нейронної мережі</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-year">1950</div>
+                                    <div class="timeline-content">
+                                        <h4>Тест Тьюринга</h4>
+                                        <p>Алан Тьюринг запропонував тест для визначення інтелекту машини</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-year">1956</div>
+                                    <div class="timeline-content">
+                                        <h4>Народження терміну "AI"</h4>
+                                        <p>Джон Маккарті вперше використав термін "штучний інтелект" на конференції в Дартмуті</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>Золота ера (1960-1970-ті)</h2>
+                            <p>
+                                Період великих очікувань та перших успіхів у галузі AI. Створювалися перші 
+                                експертні системи та програми для розв'язання задач.
+                            </p>
+                            
+                            <div class="highlight-box">
+                                <h3>Ключові досягнення:</h3>
+                                <ul>
+                                    <li>Створення мови програмування LISP</li>
+                                    <li>Розробка перших експертних систем</li>
+                                    <li>Програми для гри в шахи та шашки</li>
+                                    <li>Системи обробки природної мови</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>Зима AI (1980-1990-ті)</h2>
+                            <p>
+                                Період зменшення фінансування та інтересу до AI через нереалістичні очікування 
+                                та обмежені можливості тогочасних технологій.
+                            </p>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>Відродження (2000-ні - сьогодення)</h2>
+                            <p>
+                                Завдяки збільшенню обчислювальної потужності, великим даним та новим алгоритмам 
+                                AI переживає справжнє відродження.
+                            </p>
+                            
+                            <div class="milestone-grid">
+                                <div class="milestone-card">
+                                    <h4>2011</h4>
+                                    <p>IBM Watson перемагає в телевікторині Jeopardy!</p>
+                                </div>
+                                <div class="milestone-card">
+                                    <h4>2016</h4>
+                                    <p>AlphaGo перемагає чемпіона світу з гри Го</p>
+                                </div>
+                                <div class="milestone-card">
+                                    <h4>2020</h4>
+                                    <p>GPT-3 демонструє вражаючі можливості генерації тексту</p>
+                                </div>
+                                <div class="milestone-card">
+                                    <h4>2022</h4>
+                                    <p>ChatGPT революціонізує взаємодію з AI</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lesson-navigation">
+                            <button class="btn btn-secondary" onclick="previousLesson()">
+                                <i class="fas fa-chevron-left"></i>
+                                Попередній урок
+                            </button>
+                            <button class="btn btn-primary" onclick="nextLesson()">
+                                Наступний урок
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- Типи штучного інтелекту -->
+                    <section id="types" class="content-section">
+                        <h1>Типи штучного інтелекту</h1>
+                        
+                        <div class="lesson-meta">
+                            <span class="reading-time">
+                                <i class="fas fa-clock"></i>
+                                Час читання: 18 хвилин
+                            </span>
+                            <span class="difficulty">
+                                <i class="fas fa-signal"></i>
+                                Рівень: Початківець
+                            </span>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>Класифікація за можливостями</h2>
+                            <p class="lead">
+                                Штучний інтелект можна класифікувати за рівнем можливостей та складності завдань, 
+                                які він здатен виконувати.
+                            </p>
+                            
+                            <div class="ai-types-grid">
+                                <div class="ai-type-card">
+                                    <div class="ai-type-icon">
+                                        <i class="fas fa-microchip"></i>
+                                    </div>
+                                    <h3>Вузький AI (ANI)</h3>
+                                    <p class="ai-type-description">
+                                        Системи, призначені для виконання конкретних завдань. 
+                                        Це єдиний тип AI, який існує сьогодні.
+                                    </p>
+                                    <div class="ai-examples">
+                                        <h4>Приклади:</h4>
+                                        <ul>
+                                            <li>Розпізнавання мови (Siri, Alexa)</li>
+                                            <li>Рекомендаційні системи (Netflix, YouTube)</li>
+                                            <li>Автопілот в автомобілях</li>
+                                            <li>Шахові програми</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="ai-type-card">
+                                    <div class="ai-type-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <h3>Загальний AI (AGI)</h3>
+                                    <p class="ai-type-description">
+                                        Гіпотетичні системи з інтелектом, рівним людському, 
+                                        здатні виконувати будь-які інтелектуальні завдання.
+                                    </p>
+                                    <div class="ai-status">
+                                        <span class="status-badge theoretical">Теоретичний</span>
+                                        <p>Очікується через 10-50 років</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="ai-type-card">
+                                    <div class="ai-type-icon">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <h3>Супер AI (ASI)</h3>
+                                    <p class="ai-type-description">
+                                        Системи, що перевершують людський інтелект у всіх аспектах, 
+                                        включаючи творчість та емоційний інтелект.
+                                    </p>
+                                    <div class="ai-status">
+                                        <span class="status-badge speculative">Спекулятивний</span>
+                                        <p>Далеке майбутнє</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>Класифікація за функціональністю</h2>
+                            
+                            <div class="functionality-types">
+                                <div class="func-type">
+                                    <h3><i class="fas fa-memory"></i> Реактивні машини</h3>
+                                    <p>
+                                        Найпростіший тип AI, який реагує на поточну ситуацію без 
+                                        використання пам'яті про минулі події.
+                                    </p>
+                                    <div class="example-box">
+                                        <strong>Приклад:</strong> Deep Blue (шахова програма IBM)
+                                    </div>
+                                </div>
+                                
+                                <div class="func-type">
+                                    <h3><i class="fas fa-history"></i> Обмежена пам'ять</h3>
+                                    <p>
+                                        Системи, які можуть використовувати минулий досвід для 
+                                        прийняття рішень у поточній ситуації.
+                                    </p>
+                                    <div class="example-box">
+                                        <strong>Приклад:</strong> Автономні автомобілі, чат-боти
+                                    </div>
+                                </div>
+                                
+                                <div class="func-type">
+                                    <h3><i class="fas fa-heart"></i> Теорія розуму</h3>
+                                    <p>
+                                        Гіпотетичні системи, здатні розуміти емоції, переконання 
+                                        та думки інших.
+                                    </p>
+                                    <div class="example-box">
+                                        <strong>Статус:</strong> В розробці
+                                    </div>
+                                </div>
+                                
+                                <div class="func-type">
+                                    <h3><i class="fas fa-user-circle"></i> Самосвідомість</h3>
+                                    <p>
+                                        Системи з власною свідомістю, розумінням себе та 
+                                        своїх внутрішніх станів.
+                                    </p>
+                                    <div class="example-box">
+                                        <strong>Статус:</strong> Теоретичний концепт
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>Порівняльна таблиця</h2>
+                            
+                            <div class="comparison-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Тип AI</th>
+                                            <th>Можливості</th>
+                                            <th>Статус</th>
+                                            <th>Приклади</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Вузький AI</td>
+                                            <td>Конкретні завдання</td>
+                                            <td class="status-current">Існує</td>
+                                            <td>Siri, Netflix, Tesla</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Загальний AI</td>
+                                            <td>Людський рівень</td>
+                                            <td class="status-future">Майбутнє</td>
+                                            <td>Поки не існує</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Супер AI</td>
+                                            <td>Перевершує людей</td>
+                                            <td class="status-theoretical">Теоретичний</td>
+                                            <td>Наукова фантастика</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="lesson-navigation">
+                            <button class="btn btn-secondary" onclick="previousLesson()">
+                                <i class="fas fa-chevron-left"></i>
+                                Попередній урок
+                            </button>
+                            <button class="btn btn-primary" onclick="nextLesson()">
+                                Наступний урок
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- Застосування AI -->
+                    <section id="applications" class="content-section">
+                        <h1>Застосування штучного інтелекту</h1>
+                        
+                        <div class="lesson-meta">
+                            <span class="reading-time">
+                                <i class="fas fa-clock"></i>
+                                Час читання: 20 хвилин
+                            </span>
+                            <span class="difficulty">
+                                <i class="fas fa-signal"></i>
+                                Рівень: Початківець
+                            </span>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>Галузі застосування</h2>
+                            <p class="lead">
+                                Штучний інтелект знаходить застосування в найрізноманітніших сферах людської 
+                                діяльності, революціонізуючи способи роботи та життя.
+                            </p>
+                            
+                            <div class="applications-grid">
+                                <div class="application-card">
+                                    <div class="app-icon">
+                                        <i class="fas fa-heartbeat"></i>
+                                    </div>
+                                    <h3>Медицина</h3>
+                                    <div class="app-content">
+                                        <ul>
+                                            <li>Діагностика захворювань</li>
+                                            <li>Аналіз медичних зображень</li>
+                                            <li>Розробка ліків</li>
+                                            <li>Персоналізоване лікування</li>
+                                            <li>Хірургічні роботи</li>
+                                        </ul>
+                                        <div class="success-story">
+                                            <strong>Успіх:</strong> AI діагностує рак шкіри точніше за дерматологів
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="application-card">
+                                    <div class="app-icon">
+                                        <i class="fas fa-car"></i>
+                                    </div>
+                                    <h3>Транспорт</h3>
+                                    <div class="app-content">
+                                        <ul>
+                                            <li>Автономні автомобілі</li>
+                                            <li>Оптимізація маршрутів</li>
+                                            <li>Управління трафіком</li>
+                                            <li>Прогнозування поломок</li>
+                                            <li>Безпілотні літаки</li>
+                                        </ul>
+                                        <div class="success-story">
+                                            <strong>Успіх:</strong> Tesla Autopilot проїхав мільярди кілометрів
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="application-card">
+                                    <div class="app-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h3>Фінанси</h3>
+                                    <div class="app-content">
+                                        <ul>
+                                            <li>Алгоритмічна торгівля</li>
+                                            <li>Виявлення шахрайства</li>
+                                            <li>Кредитний скоринг</li>
+                                            <li>Роботи-консультанти</li>
+                                            <li>Аналіз ризиків</li>
+                                        </ul>
+                                        <div class="success-story">
+                                            <strong>Успіх:</strong> AI виявляє 95% шахрайських транзакцій
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="application-card">
+                                    <div class="app-icon">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <h3>Освіта</h3>
+                                    <div class="app-content">
+                                        <ul>
+                                            <li>Персоналізоване навчання</li>
+                                            <li>Автоматична перевірка</li>
+                                            <li>Віртуальні тьютори</li>
+                                            <li>Аналіз успішності</li>
+                                            <li>Адаптивні курси</li>
+                                        </ul>
+                                        <div class="success-story">
+                                            <strong>Успіх:</strong> Duolingo використовує AI для 500M+ користувачів
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="application-card">
+                                    <div class="app-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <h3>E-commerce</h3>
+                                    <div class="app-content">
+                                        <ul>
+                                            <li>Рекомендаційні системи</li>
+                                            <li>Динамічне ціноутворення</li>
+                                            <li>Чат-боти підтримки</li>
+                                            <li>Прогнозування попиту</li>
+                                            <li>Персоналізація контенту</li>
+                                        </ul>
+                                        <div class="success-story">
+                                            <strong>Успіх:</strong> Amazon генерує 35% доходів через рекомендації
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="application-card">
+                                    <div class="app-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h3>Кібербезпека</h3>
+                                    <div class="app-content">
+                                        <ul>
+                                            <li>Виявлення загроз</li>
+                                            <li>Аналіз поведінки</li>
+                                            <li>Автоматичний захист</li>
+                                            <li>Прогнозування атак</li>
+                                            <li>Форензика</li>
+                                        </ul>
+                                        <div class="success-story">
+                                            <strong>Успіх:</strong> AI скорочує час реагування на загрози в 100 разів
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>Повсякденне життя</h2>
+                            
+                            <div class="daily-life-section">
+                                <h3>AI у вашому смартфоні</h3>
+                                <div class="daily-examples">
+                                    <div class="daily-item">
+                                        <i class="fas fa-microphone"></i>
+                                        <span>Голосові асистенти (Siri, Google Assistant)</span>
+                                    </div>
+                                    <div class="daily-item">
+                                        <i class="fas fa-camera"></i>
+                                        <span>Розпізнавання обличь у фото</span>
+                                    </div>
+                                    <div class="daily-item">
+                                        <i class="fas fa-language"></i>
+                                        <span>Автоматичний переклад</span>
+                                    </div>
+                                    <div class="daily-item">
+                                        <i class="fas fa-keyboard"></i>
+                                        <span>Предиктивний набір тексту</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="daily-life-section">
+                                <h3>AI у розвагах</h3>
+                                <div class="daily-examples">
+                                    <div class="daily-item">
+                                        <i class="fas fa-film"></i>
+                                        <span>Рекомендації Netflix, YouTube</span>
+                                    </div>
+                                    <div class="daily-item">
+                                        <i class="fas fa-music"></i>
+                                        <span>Плейлисти Spotify</span>
+                                    </div>
+                                    <div class="daily-item">
+                                        <i class="fas fa-gamepad"></i>
+                                        <span>Адаптивна складність ігор</span>
+                                    </div>
+                                    <div class="daily-item">
+                                        <i class="fas fa-palette"></i>
+                                        <span>Генерація мистецтва (DALL-E, Midjourney)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>Майбутні застосування</h2>
+                            
+                            <div class="future-applications">
+                                <div class="future-category">
+                                    <h3>Найближчі 5 років</h3>
+                                    <ul>
+                                        <li>Повністю автономні автомобілі</li>
+                                        <li>AI-лікарі для базової діагностики</li>
+                                        <li>Розумні міста з AI-управлінням</li>
+                                        <li>Персональні AI-асистенти</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="future-category">
+                                    <h3>Наступні 10-20 років</h3>
+                                    <ul>
+                                        <li>Загальний штучний інтелект (AGI)</li>
+                                        <li>AI-вчені та дослідники</li>
+                                        <li>Повна автоматизація виробництва</li>
+                                        <li>AI-управління кліматом</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <h2>Виклики та обмеження</h2>
+                            
+                            <div class="challenges-grid">
+                                <div class="challenge-card">
+                                    <h4><i class="fas fa-exclamation-triangle"></i> Етичні питання</h4>
+                                    <p>Упередженість алгоритмів, приватність даних, заміщення робочих місць</p>
+                                </div>
+                                
+                                <div class="challenge-card">
+                                    <h4><i class="fas fa-database"></i> Якість даних</h4>
+                                    <p>AI потребує великих обсягів якісних даних для ефективної роботи</p>
+                                </div>
+                                
+                                <div class="challenge-card">
+                                    <h4><i class="fas fa-eye-slash"></i> Прозорість</h4>
+                                    <p>"Чорна скринька" - складність пояснення рішень AI</p>
+                                </div>
+                                
+                                <div class="challenge-card">
+                                    <h4><i class="fas fa-bolt"></i> Енергоспоживання</h4>
+                                    <p>Навчання великих моделей потребує значних енергетичних ресурсів</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lesson-navigation">
+                            <button class="btn btn-secondary" onclick="previousLesson()">
+                                <i class="fas fa-chevron-left"></i>
+                                Попередній урок
+                            </button>
+                            <button class="btn btn-primary" onclick="nextLesson()">
+                                Наступний урок
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Notes Panel -->
+                <div class="notes-panel" id="notesPanel">
+                    <div class="notes-header">
+                        <h3>Мої нотатки</h3>
+                        <button class="btn-close" id="closeNotes">&times;</button>
+                    </div>
+                    <div class="notes-content">
+                        <textarea placeholder="Додайте свої нотатки тут..." id="notesTextarea"></textarea>
+                        <div class="notes-actions">
+                            <button class="btn btn-primary" id="saveNotes">Зберегти</button>
+                            <button class="btn btn-secondary" id="clearNotes">Очистити</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/theory.js"></script>
+</body>
+</html>

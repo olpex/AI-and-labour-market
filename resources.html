@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресурси - Штучний Інтелект: розвиток кар'єри</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/resources.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <i class="fas fa-brain"></i>
+                <span>AI Career Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Головна</a></li>
+                <li><a href="theory.html" class="nav-link">Теорія</a></li>
+                <li><a href="practice.html" class="nav-link">Практика</a></li>
+                <li><a href="examples.html" class="nav-link">Приклади</a></li>
+                <li><a href="resources.html" class="nav-link active">Ресурси</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link">Кар'єра <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="careers.html">Професії в AI</a></li>
+                        <li><a href="skills.html">Необхідні навички</a></li>
+                        <li><a href="education.html">Освіта та сертифікація</a></li>
+                        <li><a href="portfolio.html">Створення портфоліо</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="resources-main">
+        <div class="container">
+            <!-- Header Section -->
+            <div class="resources-header">
+                <h1>Ресурси для розвитку</h1>
+                <p class="resources-description">
+                    Комплексна колекція найкращих ресурсів, інструментів та матеріалів для вивчення штучного інтелекту та розвитку кар'єри в цій сфері.
+                </p>
+            </div>
+
+            <!-- Search and Filter -->
+            <div class="resources-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="resourceSearch" placeholder="Пошук ресурсів...">
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-category="all">Всі</button>
+                    <button class="filter-tab" data-category="courses">Курси</button>
+                    <button class="filter-tab" data-category="books">Книги</button>
+                    <button class="filter-tab" data-category="tools">Інструменти</button>
+                    <button class="filter-tab" data-category="datasets">Дані</button>
+                    <button class="filter-tab" data-category="communities">Спільноти</button>
+                    <button class="filter-tab" data-category="jobs">Робота</button>
+                </div>
+            </div>
+
+            <!-- Resources Grid -->
+            <div class="resources-grid" id="resourcesGrid">
+                <!-- Online Courses -->
+                <div class="resource-card" data-category="courses" data-level="beginner">
+                    <div class="card-header">
+                        <div class="card-icon courses">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="card-meta">
+                            <h3>Coursera - Machine Learning</h3>
+                            <div class="card-badges">
+                                <span class="badge level-beginner">Початковий</span>
+                                <span class="badge type-free">Безкоштовно</span>
+                            </div>
+                        </div>
+                        <button class="btn-favorite" data-resource="coursera-ml">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <p class="card-description">
+                        Класичний курс Ендрю Нга з машинного навчання. Ідеальний старт для початківців з математичними основами та практичними завданнями.
+                    </p>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>11 тижнів</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-star"></i>
+                            <span>4.9/5</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>4M+ студентів</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://www.coursera.org/learn/machine-learning" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Перейти до курсу
+                        </a>
+                        <button class="btn btn-secondary" onclick="showResourceDetails('coursera-ml')">
+                            Детальніше
+                        </button>
+                    </div>
+                </div>
+
+                <div class="resource-card" data-category="courses" data-level="intermediate">
+                    <div class="card-header">
+                        <div class="card-icon courses">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="card-meta">
+                            <h3>Fast.ai - Practical Deep Learning</h3>
+                            <div class="card-badges">
+                                <span class="badge level-intermediate">Середній</span>
+                                <span class="badge type-free">Безкоштовно</span>
+                            </div>
+                        </div>
+                        <button class="btn-favorite" data-resource="fastai-dl">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <p class="card-description">
+                        Практичний підхід до глибокого навчання з акцентом на реальні проекти та сучасні методи.
+                    </p>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>7 тижнів</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-star"></i>
+                            <span>4.8/5</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://course.fast.ai/" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Перейти до курсу
+                        </a>
+                        <button class="btn btn-secondary" onclick="showResourceDetails('fastai-dl')">
+                            Детальніше
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Books -->
+                <div class="resource-card" data-category="books" data-level="intermediate">
+                    <div class="card-header">
+                        <div class="card-icon books">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="card-meta">
+                            <h3>Hands-On Machine Learning</h3>
+                            <div class="card-badges">
+                                <span class="badge level-intermediate">Середній</span>
+                                <span class="badge type-paid">Платно</span>
+                            </div>
+                        </div>
+                        <button class="btn-favorite" data-resource="hands-on-ml">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <p class="card-description">
+                        Практичний посібник з машинного навчання від Орельєна Жерона з прикладами на Python та реальними проектами.
+                    </p>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <i class="fas fa-user"></i>
+                            <span>Aurélien Géron</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-star"></i>
+                            <span>4.7/5</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>2019</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Переглянути книгу
+                        </a>
+                        <button class="btn btn-secondary" onclick="showResourceDetails('hands-on-ml')">
+                            Детальніше
+                        </button>
+                    </div>
+                </div>
+
+                <div class="resource-card" data-category="books" data-level="advanced">
+                    <div class="card-header">
+                        <div class="card-icon books">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="card-meta">
+                            <h3>Deep Learning</h3>
+                            <div class="card-badges">
+                                <span class="badge level-advanced">Просунутий</span>
+                                <span class="badge type-free">Безкоштовно</span>
+                            </div>
+                        </div>
+                        <button class="btn-favorite" data-resource="deep-learning-book">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <p class="card-description">
+                        Фундаментальна книга з глибокого навчання від Іана Гудфеллоу, Йошуа Бенжіо та Аарона Курвіля.
+                    </p>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>Goodfellow, Bengio, Courville</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-star"></i>
+                            <span>4.6/5</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Online</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://www.deeplearningbook.org/" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Читати онлайн
+                        </a>
+                        <button class="btn btn-secondary" onclick="showResourceDetails('deep-learning-book')">
+                            Детальніше
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="resource-card" data-category="tools" data-level="beginner">
+                    <div class="card-header">
+                        <div class="card-icon tools">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="card-meta">
+                            <h3>Google Colab</h3>
+                            <div class="card-badges">
+                                <span class="badge level-beginner">Початковий</span>
+                                <span class="badge type-free">Безкоштовно</span>
+                            </div>
+                        </div>
+                        <button class="btn-favorite" data-resource="google-colab">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <p class="card-description">
+                        Безкоштовна хмарна платформа для виконання Python коду з підтримкою GPU та TPU для машинного навчання.
+                    </p>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Хмарний</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-microchip"></i>
+                            <span>GPU/TPU</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <span>Jupyter</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://colab.research.google.com/" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Відкрити Colab
+                        </a>
+                        <button class="btn btn-secondary" onclick="showResourceDetails('google-colab')">
+                            Детальніше
+                        </button>
+                    </div>
+                </div>
+
+                <div class="resource-card" data-category="tools" data-level="intermediate">
+                    <div class="card-header">
+                        <div class="card-icon tools">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="card-meta">
+                            <h3>TensorFlow</h3>
+                            <div class="card-badges">
+                                <span class="badge level-intermediate">Середній</span>
+                                <span class="badge type-free">Безкоштовно</span>
+                            </div>
+                        </div>
+                        <button class="btn-favorite" data-resource="tensorflow">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <p class="card-description">
+                        Відкрита бібліотека машинного навчання від Google для розробки та тренування моделей ШІ.
+                    </p>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <span>Python/JS</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-star"></i>
+                            <span>185k ⭐</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-building"></i>
+                            <span>Google</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://tensorflow.org/" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Відвідати сайт
+                        </a>
+                        <button class="btn btn-secondary" onclick="showResourceDetails('tensorflow')">
+                            Детальніше
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Datasets -->
+                <div class="resource-card" data-category="datasets" data-level="beginner">
+                    <div class="card-header">
+                        <div class="card-icon datasets">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="card-meta">
+                            <h3>Kaggle Datasets</h3>
+                            <div class="card-badges">
+                                <span class="badge level-beginner">Початковий</span>
+                                <span class="badge type-free">Безкоштовно</span>
+                            </div>
+                        </div>
+                        <button class="btn-favorite" data-resource="kaggle-datasets">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <p class="card-description">
+                        Величезна колекція наборів даних для машинного навчання з різних сфер: від зображень до фінансових даних.
+                    </p>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>50k+ наборів</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>Спільнота</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-download"></i>
+                            <span>API</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://www.kaggle.com/datasets" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Переглянути дані
+                        </a>
+                        <button class="btn btn-secondary" onclick="showResourceDetails('kaggle-datasets')">
+                            Детальніше
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Communities -->
+                <div class="resource-card" data-category="communities" data-level="all">
+                    <div class="card-header">
+                        <div class="card-icon communities">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="card-meta">
+                            <h3>r/MachineLearning</h3>
+                            <div class="card-badges">
+                                <span class="badge level-all">Всі рівні</span>
+                                <span class="badge type-free">Безкоштовно</span>
+                            </div>
+                        </div>
+                        <button class="btn-favorite" data-resource="reddit-ml">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <p class="card-description">
+                        Активна спільнота дослідників та практиків машинного навчання з обговореннями останніх досліджень та трендів.
+                    </p>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>2.7M учасників</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Дискусії</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-newspaper"></i>
+                            <span>Новини</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://www.reddit.com/r/MachineLearning/" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Приєднатися
+                        </a>
+                        <button class="btn btn-secondary" onclick="showResourceDetails('reddit-ml')">
+                            Детальніше
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Job Resources -->
+                <div class="resource-card" data-category="jobs" data-level="all">
+                    <div class="card-header">
+                        <div class="card-icon jobs">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="card-meta">
+                            <h3>AI Jobs Board</h3>
+                            <div class="card-badges">
+                                <span class="badge level-all">Всі рівні</span>
+                                <span class="badge type-free">Безкоштовно</span>
+                            </div>
+                        </div>
+                        <button class="btn-favorite" data-resource="ai-jobs">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <p class="card-description">
+                        Спеціалізована платформа для пошуку роботи в сфері штучного інтелекту та машинного навчання.
+                    </p>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>1000+ вакансій</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Глобально</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-filter"></i>
+                            <span>Фільтри</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://aijobs.app/" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Шукати роботу
+                        </a>
+                        <button class="btn btn-secondary" onclick="showResourceDetails('ai-jobs')">
+                            Детальніше
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn btn-outline" id="loadMoreBtn">
+                    <i class="fas fa-plus"></i>
+                    Завантажити більше ресурсів
+                </button>
+            </div>
+
+            <!-- Quick Access Section -->
+            <div class="quick-access-section">
+                <h2>Швидкий доступ</h2>
+                <div class="quick-access-grid">
+                    <div class="quick-access-card">
+                        <div class="quick-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Початок роботи</h3>
+                        <p>Покрокові інструкції для новачків у сфері ШІ</p>
+                        <a href="theory.html" class="quick-link">Розпочати навчання <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="quick-access-card">
+                        <div class="quick-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Практичні завдання</h3>
+                        <p>Інтерактивні вправи та проекти</p>
+                        <a href="practice.html" class="quick-link">Почати практику <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="quick-access-card">
+                        <div class="quick-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Кар'єрний шлях</h3>
+                        <p>Планування розвитку в сфері ШІ</p>
+                        <a href="#career-path" class="quick-link">Дізнатися більше <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="quick-access-card">
+                        <div class="quick-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Збережені ресурси</h3>
+                        <p>Ваші улюблені матеріали</p>
+                        <a href="#" class="quick-link" onclick="showFavorites()">Переглянути <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Resource Details Modal -->
+    <div class="modal" id="resourceModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Деталі ресурсу</h3>
+                <button class="btn-close" onclick="closeResourceModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Career Hub</h3>
+                    <p>Ваш надійний партнер у розвитку кар'єри в сфері штучного інтелекту.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Навчання</h4>
+                    <ul>
+                        <li><a href="theory.html">Теоретичні основи</a></li>
+                        <li><a href="practice.html">Практичні завдання</a></li>
+                        <li><a href="examples.html">Інтерактивні приклади</a></li>
+                        <li><a href="resources.html">Корисні ресурси</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ресурси</h4>
+                    <ul>
+                        <li><a href="#">Документація</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Спільнота</a></li>
+                        <li><a href="#">Підтримка</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакти</h4>
+                    <ul>
+                        <li><a href="mailto:info@aicareerhub.com">info@aicareerhub.com</a></li>
+                        <li><a href="tel:+380123456789">+38 (012) 345-67-89</a></li>
+                        <li>Київ, Україна</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Career Hub. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/resources.js"></script>
+</body>
+</html>

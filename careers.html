@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Професії в AI - ШІ: розвиток кар'єри</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/careers.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-brain"></i>
+                <span>AI Career Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Головна</a></li>
+                <li><a href="theory.html" class="nav-link">Теорія</a></li>
+                <li><a href="examples.html" class="nav-link">Приклади</a></li>
+                <li><a href="practice.html" class="nav-link">Практика</a></li>
+                <li><a href="resources.html" class="nav-link">Ресурси</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link active">Кар'єра <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="careers.html">Професії в AI</a></li>
+                        <li><a href="skills.html">Необхідні навички</a></li>
+                        <li><a href="education.html">Освіта та сертифікація</a></li>
+                        <li><a href="portfolio.html">Створення портфоліо</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">Професії в штучному інтелекті</h1>
+                <p class="hero-subtitle">Дослідіть різноманітні кар'єрні шляхи в галузі AI та знайдіть свій напрямок</p>
+            </div>
+        </section>
+
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-category="all">Всі професії</button>
+                    <button class="filter-btn" data-category="technical">Технічні</button>
+                    <button class="filter-btn" data-category="research">Дослідницькі</button>
+                    <button class="filter-btn" data-category="business">Бізнес</button>
+                    <button class="filter-btn" data-category="creative">Креативні</button>
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Пошук професій..." id="careerSearch">
+                </div>
+            </div>
+        </section>
+
+        <section class="careers-grid">
+            <div class="container">
+                <div class="careers-container" id="careersContainer">
+                    <!-- Career cards will be dynamically generated -->
+                </div>
+            </div>
+        </section>
+
+        <section class="career-path-section">
+            <div class="container">
+                <h2>Кар'єрні траєкторії</h2>
+                <div class="path-visualization">
+                    <div class="path-item">
+                        <div class="path-level">Початківець</div>
+                        <div class="path-roles">
+                            <span class="role-tag">Junior Data Scientist</span>
+                            <span class="role-tag">ML Engineer Intern</span>
+                            <span class="role-tag">AI Research Assistant</span>
+                        </div>
+                    </div>
+                    <div class="path-arrow">→</div>
+                    <div class="path-item">
+                        <div class="path-level">Середній</div>
+                        <div class="path-roles">
+                            <span class="role-tag">Data Scientist</span>
+                            <span class="role-tag">ML Engineer</span>
+                            <span class="role-tag">AI Product Manager</span>
+                        </div>
+                    </div>
+                    <div class="path-arrow">→</div>
+                    <div class="path-item">
+                        <div class="path-level">Експерт</div>
+                        <div class="path-roles">
+                            <span class="role-tag">Senior Data Scientist</span>
+                            <span class="role-tag">AI Architect</span>
+                            <span class="role-tag">Research Scientist</span>
+                        </div>
+                    </div>
+                    <div class="path-arrow">→</div>
+                    <div class="path-item">
+                        <div class="path-level">Лідер</div>
+                        <div class="path-roles">
+                            <span class="role-tag">Chief Data Officer</span>
+                            <span class="role-tag">AI Director</span>
+                            <span class="role-tag">Head of AI Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="salary-section">
+            <div class="container">
+                <h2>Рівень зарплат в AI</h2>
+                <div class="salary-chart">
+                    <div class="chart-container">
+                        <canvas id="salaryChart"></canvas>
+                    </div>
+                    <div class="salary-legend">
+                        <div class="legend-item">
+                            <span class="legend-color junior"></span>
+                            <span>Junior (0-2 роки)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color mid"></span>
+                            <span>Middle (2-5 років)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color senior"></span>
+                            <span>Senior (5+ років)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Career Detail Modal -->
+    <div class="modal" id="careerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle"></h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="career-details">
+                    <div class="detail-section">
+                        <h4>Опис професії</h4>
+                        <p id="careerDescription"></p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Ключові обов'язки</h4>
+                        <ul id="careerResponsibilities"></ul>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Необхідні навички</h4>
+                        <div class="skills-tags" id="careerSkills"></div>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Зарплатна вилка</h4>
+                        <div class="salary-range" id="careerSalary"></div>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Перспективи росту</h4>
+                        <p id="careerGrowth"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="learnMoreBtn">Дізнатися більше</button>
+                <button class="btn btn-secondary" id="saveCareerBtn">Зберегти</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Career Hub</h3>
+                    <p>Ваш провідник у світі кар'єри штучного інтелекту</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навігація</h4>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="theory.html">Теорія</a></li>
+                        <li><a href="practice.html">Практика</a></li>
+                        <li><a href="careers.html">Професії</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакти</h4>
+                    <p>Email: info@aicareerhub.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Career Hub. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/careers.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Необхідні навички - ШІ: розвиток кар'єри</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-brain"></i>
+                <span>AI Career Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Головна</a></li>
+                <li><a href="theory.html" class="nav-link">Теорія</a></li>
+                <li><a href="examples.html" class="nav-link">Приклади</a></li>
+                <li><a href="practice.html" class="nav-link">Практика</a></li>
+                <li><a href="resources.html" class="nav-link">Ресурси</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link active">Кар'єра <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="careers.html">Професії в AI</a></li>
+                        <li><a href="skills.html">Необхідні навички</a></li>
+                        <li><a href="education.html">Освіта та сертифікація</a></li>
+                        <li><a href="portfolio.html">Створення портфоліо</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">Необхідні навички для AI</h1>
+                <p class="hero-subtitle">Розвивайте ключові компетенції для успішної кар'єри в штучному інтелекті</p>
+            </div>
+        </section>
+
+        <section class="skills-assessment">
+            <div class="container">
+                <h2>Оцініть свої навички</h2>
+                <p>Пройдіть швидку самооцінку, щоб визначити свій поточний рівень та області для розвитку</p>
+                <button class="btn btn-primary" id="startAssessment">
+                    <i class="fas fa-play"></i>
+                    Почати оцінку
+                </button>
+            </div>
+        </section>
+
+        <section class="skills-categories">
+            <div class="container">
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="technical">Технічні навички</button>
+                    <button class="tab-btn" data-category="soft">М'які навички</button>
+                    <button class="tab-btn" data-category="domain">Предметні знання</button>
+                    <button class="tab-btn" data-category="tools">Інструменти</button>
+                </div>
+
+                <div class="skills-content">
+                    <div class="skills-grid" id="skillsGrid">
+                        <!-- Skills will be dynamically loaded -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="learning-path">
+            <div class="container">
+                <h2>Персоналізований план навчання</h2>
+                <div class="path-selector">
+                    <label for="careerGoal">Оберіть вашу мету:</label>
+                    <select id="careerGoal">
+                        <option value="">Оберіть професію...</option>
+                        <option value="data-scientist">Data Scientist</option>
+                        <option value="ml-engineer">ML Engineer</option>
+                        <option value="ai-researcher">AI Researcher</option>
+                        <option value="product-manager">AI Product Manager</option>
+                        <option value="cv-engineer">Computer Vision Engineer</option>
+                        <option value="nlp-engineer">NLP Engineer</option>
+                    </select>
+                </div>
+                <div class="learning-roadmap" id="learningRoadmap">
+                    <!-- Roadmap will be generated based on selection -->
+                </div>
+            </div>
+        </section>
+
+        <section class="skill-tracker">
+            <div class="container">
+                <h2>Трекер прогресу</h2>
+                <div class="tracker-dashboard">
+                    <div class="progress-overview">
+                        <div class="progress-card">
+                            <h3>Загальний прогрес</h3>
+                            <div class="circular-progress" data-progress="0">
+                                <span class="progress-text">0%</span>
+                            </div>
+                        </div>
+                        <div class="progress-card">
+                            <h3>Технічні навички</h3>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-category="technical" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-label">0/10 навичок</span>
+                        </div>
+                        <div class="progress-card">
+                            <h3>М'які навички</h3>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-category="soft" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-label">0/8 навичок</span>
+                        </div>
+                    </div>
+                    <div class="recent-achievements">
+                        <h3>Останні досягнення</h3>
+                        <div class="achievements-list" id="achievementsList">
+                            <p class="no-achievements">Почніть вивчати навички, щоб отримати перші досягнення!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skill-resources">
+            <div class="container">
+                <h2>Ресурси для навчання</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Онлайн курси</h3>
+                        <p>Структуровані курси від провідних платформ</p>
+                        <ul>
+                            <li>Coursera AI Specializations</li>
+                            <li>edX MIT AI Courses</li>
+                            <li>Udacity AI Nanodegrees</li>
+                        </ul>
+                        <a href="resources.html" class="resource-link">Переглянути курси</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Практичні проекти</h3>
+                        <p>Реальні проекти для розвитку навичок</p>
+                        <ul>
+                            <li>Kaggle Competitions</li>
+                            <li>GitHub Open Source</li>
+                            <li>Personal Projects</li>
+                        </ul>
+                        <a href="practice.html" class="resource-link">Почати практику</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Спільноти</h3>
+                        <p>Приєднайтесь до AI спільнот</p>
+                        <ul>
+                            <li>AI/ML Discord серверів</li>
+                            <li>Reddit r/MachineLearning</li>
+                            <li>LinkedIn AI Groups</li>
+                        </ul>
+                        <a href="resources.html" class="resource-link">Знайти спільноту</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Skills Assessment Modal -->
+    <div class="modal" id="assessmentModal">
+        <div class="modal-content assessment-modal">
+            <div class="modal-header">
+                <h3>Оцінка навичок</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="assessment-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="assessmentProgress"></div>
+                    </div>
+                    <span class="progress-text">Питання <span id="currentQuestion">1</span> з <span id="totalQuestions">10</span></span>
+                </div>
+                <div class="question-container" id="questionContainer">
+                    <!-- Questions will be loaded dynamically -->
+                </div>
+                <div class="assessment-controls">
+                    <button class="btn btn-secondary" id="prevQuestion" disabled>Назад</button>
+                    <button class="btn btn-primary" id="nextQuestion">Далі</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skill Detail Modal -->
+    <div class="modal" id="skillModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="skillTitle"></h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="skill-details">
+                    <div class="skill-level">
+                        <h4>Ваш рівень</h4>
+                        <div class="level-selector">
+                            <button class="level-btn" data-level="0">Новачок</button>
+                            <button class="level-btn" data-level="1">Початківець</button>
+                            <button class="level-btn" data-level="2">Середній</button>
+                            <button class="level-btn" data-level="3">Просунутий</button>
+                            <button class="level-btn" data-level="4">Експерт</button>
+                        </div>
+                    </div>
+                    <div class="skill-description">
+                        <h4>Опис</h4>
+                        <p id="skillDescription"></p>
+                    </div>
+                    <div class="skill-resources">
+                        <h4>Ресурси для вивчення</h4>
+                        <ul id="skillResourcesList"></ul>
+                    </div>
+                    <div class="skill-projects">
+                        <h4>Проекти для практики</h4>
+                        <ul id="skillProjectsList"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="saveSkillLevel">Зберегти рівень</button>
+                <button class="btn btn-secondary" id="addToLearningPlan">Додати до плану</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Career Hub</h3>
+                    <p>Ваш провідник у світі кар'єри штучного інтелекту</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навігація</h4>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="theory.html">Теорія</a></li>
+                        <li><a href="practice.html">Практика</a></li>
+                        <li><a href="skills.html">Навички</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакти</h4>
+                    <p>Email: info@aicareerhub.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Career Hub. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/skills.js"></script>
+</body>
+</html>

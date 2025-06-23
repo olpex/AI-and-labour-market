@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Штучний Інтелект: розвиток кар'єри та професійне зростання</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-brain"></i>
+                <span>AI Кар'єра</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Головна</a></li>
+                <li><a href="theory.html" class="nav-link">Теорія</a></li>
+                <li><a href="examples.html" class="nav-link">Приклади</a></li>
+                <li><a href="practice.html" class="nav-link">Практика</a></li>
+                <li><a href="resources.html" class="nav-link">Ресурси</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link">Кар'єра <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="careers.html">Професії в AI</a></li>
+                        <li><a href="skills.html">Необхідні навички</a></li>
+                        <li><a href="education.html">Освіта та сертифікація</a></li>
+                        <li><a href="portfolio.html">Створення портфоліо</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Штучний Інтелект:
+                        <span class="gradient-text">розвиток кар'єри</span>
+                        та професійне зростання
+                    </h1>
+                    <p class="hero-description">
+                        Комплексний онлайн-ресурс для вивчення основ веб-дизайну та UX/UI принципів.
+                        Поєднуємо теоретичні знання з практичним застосуванням та можливістю самотестування.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#theory" class="btn btn-primary">
+                            <i class="fas fa-play"></i>
+                            Почати навчання
+                        </a>
+                        <a href="#test" class="btn btn-secondary">
+                            <i class="fas fa-chart-line"></i>
+                            Пройти тест
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="ai-illustration">
+                        <div class="brain-container">
+                            <i class="fas fa-brain brain-icon"></i>
+                            <div class="neural-network">
+                                <div class="node"></div>
+                                <div class="node"></div>
+                                <div class="node"></div>
+                                <div class="node"></div>
+                                <div class="connection"></div>
+                                <div class="connection"></div>
+                                <div class="connection"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Path Section -->
+        <section class="learning-path">
+            <div class="container">
+                <h2 class="section-title">Ваш шлях до успіху в AI</h2>
+                <div class="path-cards">
+                    <div class="path-card" data-level="beginner">
+                        <div class="card-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Початківець</h3>
+                        <p>Основи AI, базові концепції та перші кроки в професії</p>
+                        <ul class="card-features">
+                            <li>Що таке штучний інтелект</li>
+                            <li>Основні напрямки AI</li>
+                            <li>Необхідні навички</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="selectLevel('beginner')">Обрати рівень</button>
+                    </div>
+                    <div class="path-card" data-level="intermediate">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Середній</h3>
+                        <p>Поглиблене вивчення технологій та практичне застосування</p>
+                        <ul class="card-features">
+                            <li>Machine Learning алгоритми</li>
+                            <li>Робота з даними</li>
+                            <li>Створення AI проектів</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="selectLevel('intermediate')">Обрати рівень</button>
+                    </div>
+                    <div class="path-card" data-level="advanced">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Експерт</h3>
+                        <p>Лідерство, інновації та розвиток AI стратегій</p>
+                        <ul class="card-features">
+                            <li>Deep Learning</li>
+                            <li>AI стратегії для бізнесу</li>
+                            <li>Керівництво AI командами</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="selectLevel('advanced')">Обрати рівень</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Чому обрати наш курс?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Інтерактивне навчання</h3>
+                        <p>Практичні завдання та живі редактори коду для безпосереднього застосування знань</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Адаптивний дизайн</h3>
+                        <p>Навчайтеся на будь-якому пристрої - комп'ютері, планшеті або смартфоні</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Сертифікація</h3>
+                        <p>Отримайте сертифікат після успішного завершення курсу</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Спільнота</h3>
+                        <p>Приєднуйтеся до спільноти AI професіоналів та обмінюйтеся досвідом</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Tracker -->
+        <section class="progress-section">
+            <div class="container">
+                <h2 class="section-title">Відстежуйте свій прогрес</h2>
+                <div class="progress-dashboard">
+                    <div class="progress-card">
+                        <h3>Загальний прогрес</h3>
+                        <div class="progress-circle">
+                            <svg class="progress-ring" width="120" height="120">
+                                <circle class="progress-ring-circle" stroke="#e6e6e6" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                <circle class="progress-ring-circle progress" stroke="#4f46e5" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" stroke-dasharray="327" stroke-dashoffset="245"/>
+                            </svg>
+                            <div class="progress-text">25%</div>
+                        </div>
+                    </div>
+                    <div class="progress-stats">
+                        <div class="stat">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">Завершено уроків</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Практичних завдань</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Пройдено тестів</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Кар'єра</h3>
+                    <p>Ваш надійний партнер у розвитку кар'єри в сфері штучного інтелекту</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навчання</h4>
+                    <ul>
+                        <li><a href="#theory">Теоретичні основи</a></li>
+                        <li><a href="#examples">Практичні приклади</a></li>
+                        <li><a href="#practice">Завдання</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ресурси</h4>
+                    <ul>
+                        <li><a href="#resources">Корисні посилання</a></li>
+                        <li><a href="#test">Тестування знань</a></li>
+                        <li><a href="#glossary">Глосарій термінів</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакти</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Кар'єра. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
